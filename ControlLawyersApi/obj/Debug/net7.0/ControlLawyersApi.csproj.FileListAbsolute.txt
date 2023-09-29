@@ -1,0 +1,7 @@
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.AssemblyInfoInputs.cache
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.AssemblyInfo.cs
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MINEDUCYT\Desktop\ControlLawyersApi\ControlLawyersApi\obj\Debug\net7.0\ControlLawyersApi.MvcApplicationPartsAssemblyInfo.cache
