@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using ControlLawyersApi.Context;
 using ControlLawyersApi.DTOs;
 using ControlLawyersApi.Entities;
@@ -8,6 +9,7 @@ using ControlLawyersApi.Repositories.Interfaces;
 namespace ControlLawyersApi.Repositories
 {
     public class UsuarioRepository : IUsuario
+
 
     {
         private readonly ApplicationDbContext _db;
@@ -18,35 +20,55 @@ namespace ControlLawyersApi.Repositories
             _db = db;
             _mapper = mapper;
         }
-        public async Task<UsuarioDTO> Usuario(int id)
-        {
-            var entidad = await _db.usuarios.findAsync(id);
-            var usuario = _mapper.Map<Usuario, UsuarioDTO>(entidad);
 
+        public async Task<UsuarioDTO> usuario(int id)
+        {
+            var entidad = await _db.usuarios.FindAsync(id);
+            var usuario = _mapper.Map<Usuario, UsuarioDTO>(entidad);
             return usuario;
         }
-        public async Task<ICollection<UsuarioDTO>> usuarios()
+        public async Task<ICollection<UsuarioDTO>> Usuarios()
         {
             var entidades = await _db.usuarios.ToListAsync();
             var usuarios = _mapper.Map<ICollection<Usuario>, ICollection<UsuarioDTO>>(entidades);
             return usuarios;
         }
-        public Task<int> Crear(UsuarioDTO usuario)
+
+
+        public async Task<int> Crear(UsuarioDTO usuario)
         {
-            throw new NotImplementedException();
+            await _db.usuarios.AddAsync(_mapper.Map<UsuarioDTO, Usuario>(usuario));
+
+            return await Guardar();
         }
 
-        public Task<int> Eliminar(int id)
+        public async Task<int> Eliminar(int id)
         {
-            throw new NotImplementedException();
+            var usuario = await _db.usuarios.FindAsync(id);
+            if (usuario == null)
+                return 0;
+
+            _db.usuarios.Remove(usuario);
+            return await Guardar();
         }
 
-        public Task<int> Guardar()
+        public async Task<int> Guardar()
         {
-            throw new NotImplementedException();
+            return await _db.SaveChangesAsync();
         }
 
-        public Task<int> Modificar(int id, UsuarioDTO usuario)
+        public async Task<int> Modificar(int id, UsuarioDTO usuario)
+        {
+            var entidad = await _db.usuarios.FindAsync(id);
+            if (usuario == null)
+                return 0;
+
+            entidad.NombreUsuario = usuario.NombreUsuario;
+            _db.usuarios.Update(entidad);
+            return await Guardar();
+        }
+
+        public Task<ICollection<IUsuario>> usuarios()
         {
             throw new NotImplementedException();
         }
@@ -55,17 +77,8 @@ namespace ControlLawyersApi.Repositories
         {
             throw new NotImplementedException();
         }
-
-        public Task<ICollection<IUsuario>> 
-            
-            eeusuarios()
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<ICollection<IUsuario>> IUsuario.usuarios()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+
+
+       

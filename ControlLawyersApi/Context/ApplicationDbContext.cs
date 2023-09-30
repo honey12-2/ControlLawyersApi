@@ -1,11 +1,11 @@
 ﻿using ControlLawyersApi.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
+
 namespace ControlLawyersApi.Context
 {
-    public class ApplicationDBContext
-    {
-        internal object usuarios;
+  
 
         public class ApplicationDbContext : DbContext
         {
@@ -23,5 +23,5 @@ namespace ControlLawyersApi.Context
         }
     }
 
-}
+
 
