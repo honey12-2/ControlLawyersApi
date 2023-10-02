@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "IE6bigamwtMjUm8keNbk/QqAbeYxNt6rXMdNVjFSrYkpYtjVsvtkqsC6s+lrIsnVqG4UtiJnYvP1sEx2e5C7Zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MINEDUCYT\\Desktop\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj",
+=======
+  "dgSpecHash": "hV3tIKraj1KSkdBhCXtG8K25fxXp8ULYnsY6Tg6iFcv1zTmZNEAe0K8x30BAIoZCgWMpLqE8dn66GtzNosGcBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj",
+>>>>>>> creacion de la carpeta endpoints
   "expectedPackageFiles": [
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

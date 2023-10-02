@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\MINEDUCYT\\Desktop\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj",
         "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\ControlLawyersApi\\ControlLawyersApi\\obj\\",
+=======
+    "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj",
+        "projectName": "ControlLawyersApi",
+        "projectPath": "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\ControlLawyersApi.csproj",
+        "packagesPath": "C:\\Users\\Julia Vasquez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Julia Vasquez\\source\\repos\\honey12-2\\ControlLawyersApi\\ControlLawyersApi\\obj\\",
+>>>>>>> creacion de la carpeta endpoints
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
+=======
+    "",
+    "\\ControlLawyersApi",
+    "\\ControlLawyersApi\\DTOs",
+    "\\ControlLawyersApi\\Mappings",
+    "\\ControlLawyersApi\\Properties"
+>>>>>>> creacion de la carpeta endpoints
   ],
   "SelectedNode": "\\ControlLawyersApi.sln",
   "PreviewInSolutionExplorer": false
